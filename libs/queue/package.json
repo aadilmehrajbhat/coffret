@@ -1,15 +1,25 @@
 {
   "name": "@coffret/queue",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Lightweight, type-safe, and memory-efficient queue for resource-sensitive applications.",
   "type": "module",
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts",
     "clean": "rm -rf dist node_modules",
     "test": "ava"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "queue",
+    "data-structure",
+    "linked list",
+    "fifo",
+    "enqueue",
+    "dequeue",
+    "algorithm",
+    "type-safe",
+    "memory-efficient"
+  ],
+  "author": "Aadil Mehraj",
   "license": "MIT",
   "ava": {
     "files": [
