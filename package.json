@@ -8,6 +8,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "clean": "rm -rf node_modules && pnpm -r run clean",
+    "changeset": "changeset",
+    "publish:packages": "changeset publish",
+    "version:packages": "changeset version",
     "prepare": "husky"
   },
   "keywords": [],
@@ -47,5 +50,9 @@
     "lint-staged": "^15.2.1",
     "prettier": "^3.2.4",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1"
   }
 }
