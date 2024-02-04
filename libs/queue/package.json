@@ -3,6 +3,22 @@
   "version": "0.0.2",
   "description": "Lightweight, type-safe, and memory-efficient queue for resource-sensitive applications.",
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/aadilmehrajbhat/coffret#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aadilmehrajbhat/coffret.git",
+    "directory": "libs/queue"
+  },
+  "author": {
+    "name": "Aadil Mehraj",
+    "email": "hello@aadilmehraj.dev"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "clean": "rm -rf dist node_modules",
@@ -19,7 +35,6 @@
     "type-safe",
     "memory-efficient"
   ],
-  "author": "Aadil Mehraj",
   "license": "MIT",
   "ava": {
     "files": [
