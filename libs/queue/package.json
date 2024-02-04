@@ -1,6 +1,6 @@
 {
   "name": "@coffret/queue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight, type-safe, and memory-efficient queue for resource-sensitive applications.",
   "type": "module",
   "scripts": {
