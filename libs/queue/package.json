@@ -4,7 +4,7 @@
   "description": "Lightweight, type-safe, and memory-efficient queue for resource-sensitive applications.",
   "type": "module",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
     "clean": "rm -rf dist node_modules",
     "test": "ava"
   },

@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "pnpm -r run test",
+    "build": "pnpm -r run build",
     "lint": "eslint .",
     "format": "prettier --write .",
     "clean": "rm -rf node_modules && pnpm -r run clean",
