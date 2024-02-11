@@ -1,6 +1,6 @@
 {
   "name": "@coffret/queue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Lightweight, type-safe, and memory-efficient queue for resource-sensitive applications.",
   "type": "module",
   "main": "./dist/index.js",
@@ -21,8 +21,9 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "clean": "rm -rf dist node_modules",
-    "test": "ava"
+    "clean": "rm -rf dist node_modules build",
+    "test": "tsc & ava",
+    "test:watch": "tsc --watch & ava --watch"
   },
   "keywords": [
     "queue",
@@ -36,23 +37,10 @@
     "memory-efficient"
   ],
   "license": "MIT",
-  "ava": {
-    "files": [
-      "./**/*.test.{js,ts}"
-    ],
-    "extensions": {
-      "js": true,
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--import=tsimp"
-    ]
-  },
   "devDependencies": {
     "@ava/typescript": "^4.1.0",
     "ava": "^6.1.1",
     "queue": "^7.0.0",
-    "tsimp": "^2.0.10",
     "tsup": "*",
     "typescript": "*"
   }
