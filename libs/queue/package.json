@@ -36,18 +36,6 @@
     "memory-efficient"
   ],
   "license": "MIT",
-  "ava": {
-    "files": [
-      "./**/*.test.{js,ts}"
-    ],
-    "extensions": {
-      "js": true,
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--import=tsimp"
-    ]
-  },
   "devDependencies": {
     "@ava/typescript": "^4.1.0",
     "ava": "^6.1.1",

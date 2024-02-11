@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import { Queue } from './Queue';
+import { Queue } from './Queue.js';
 
 test('should return the instance of Queue', (t) => {
   const queue = new Queue();
