@@ -21,8 +21,9 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "clean": "rm -rf dist node_modules",
-    "test": "ava"
+    "clean": "rm -rf dist node_modules build",
+    "test": "tsc & ava",
+    "test:watch": "tsc --watch & ava --watch"
   },
   "keywords": [
     "queue",
@@ -40,7 +41,6 @@
     "@ava/typescript": "^4.1.0",
     "ava": "^6.1.1",
     "queue": "^7.0.0",
-    "tsimp": "^2.0.10",
     "tsup": "*",
     "typescript": "*"
   }
